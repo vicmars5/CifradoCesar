@@ -17,7 +17,7 @@ function encode (key, msg) {
 function decode (key, msg) {
   const dec = []
   let aux
-
+  
   for (let i = 0; i < msg.length; i++) {
     aux = msg.charCodeAt(i) - key
     if (aux < 0) aux = UNICODE_LENGTH + aux
